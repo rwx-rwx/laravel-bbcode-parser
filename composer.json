@@ -1,0 +1,26 @@
+{
+    "name": "rwx-rwx/laravel-bbcode-parser",
+    "description": "Parse your bbcode easy with this library.",
+    "keywords": ["bbcode", "parser", "laravel"],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "illuminate/support": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rwxrwx\\BBCode\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rwxrwx\\BBCode\\BBCodeServiceProvider"
+            ],
+            "aliases": {
+                "BBCode": "Rwxrwx\\BBCode\\Facades\\BBCode"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
